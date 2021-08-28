@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #67595E;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+    margin: 0;
+}
+
+.movie-theater{
+    margin: 10px 0;
+}
+
+.movie-theater{
+    font-size: 20px;
+}
+
+.movie-theater select{
+    padding:5px 15px 5px 15px;
+    margin-left: 10px;
+}
+
+.seat{
+    height: 15px;
+    width: 15px;
+    background: #A49393;
+    margin: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 25px;
+}
+.seat:nth-last-of-type(2){
+    margin-left: 25px;
+}
+
+.seat:not(.occupied):hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.show-case:hover .seat:not(.occupied){
+    cursor: default;
+    transform: scale(1);
+}
+
+.show-case{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background: rgba(0,0,0,0.2);
+    
+}
+
+.show-case li{
+    display: flex;
+    margin: 0 20px;
+   margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-case .seat{
+    margin-right: 10px;
+}
+
+.seat.selected{
+    background-color: #ECF87F;
+}
+
+.seat.occupied{
+    background-color: white;
+}
+
+.row{
+    display: flex;
+}
+
+.screen{
+   
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    margin: 20px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.7);
+
+}
+
+.container{
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+p span{
+    color: #F1CED4;
+}
